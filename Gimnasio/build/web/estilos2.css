@@ -1,0 +1,115 @@
+:root{
+    --font: "Work Sans", sans-serif;
+    --background: #FFFFFF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #6F6F6F;
+}
+
+body {
+  font-family: var(--font);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://th.bing.com/th/id/R.8f15b3a75a148811f5bae1e3d5455ba2?rik=3yDsLUJAwSyUUQ&pid=ImgRaw&r=0');
+  background-size: contain;
+  text-align: center;
+  padding: 0;
+  padding-top: 15px; 
+  margin: 0;        
+  color: black;
+  background-color: var(--background);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: #1C1D22;
+    display: flex;
+    width: 40%;
+    align-items: space-between;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.nombre-text {
+    margin: 0;
+    height: auto;
+    box-sizing: border-box;
+    padding: 16px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.content .icon {
+    color: var(--white);
+    box-sizing: border-box;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    background: var(--gray);
+    margin-top: 13%;
+}
+
+main:before {
+    content: 'Mi rutina';
+    font-size: 20px;
+    position: absolute;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--gray);
+    top: -53px;
+    left: 10px;
+    padding: 15px 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Contenedor flexible con wrap */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-color: var(--gray);
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: var(--white);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.9);
+}
+
+.flex-item p {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.content-info{
+    position: relative;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height: 350px;
+    background-color: var(--white);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.9);
+}

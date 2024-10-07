@@ -1,0 +1,38 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 24, 2024, 5:05:42 PM
+    Author     : laver
+*/
+
+html{
+    background-image: url("imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color:goldenrod;
+}
+
+h1{
+    font-size: 50px
+}
+
+table {
+    margin: 0 auto; /* Centrar la tabla horizontalmente */ 
+}
+
+input{
+    background-color: gray;
+    color: white;
+}
+
+input::placeholder{
+    color: black;
+}

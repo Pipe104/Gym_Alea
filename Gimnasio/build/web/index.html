@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Incripcion gym</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo1.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>
+            Minotauro Gym
+        </h1>
+
+        <table>
+            <tr>
+                <td>
+                    <img alt="Logo del gym" src="imagenes/logo.png">
+
+                    <h2>
+                        "El dolor es temporal, el orgullo es para siempre."
+                    </h2>
+                    <p>
+                        Dorian Yates
+                    </p>
+                </td>
+
+                <td>    
+                        <h2><b>Formulario de inscripcion</b></h2>
+                        <form action="ServletGym">
+
+                            <label for="nombre"> <b>Nombre: </b></label>                
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                            <br><br>
+                            <label for="edad"><b> Edad: </b></label>
+                            <input type="number" id="edad" name="edad" min="14" max="99" placeholder="Ingrese su edad" required>
+
+                            <br><br>
+                            <label for="peso"><b> Peso (Kg): </b></label>
+                            <input type="number" id="peso" name="peso" min="40" max="400" step="0.1" placeholder="Ingrese su peso en Kg" required>
+
+                            <br><br>
+                            <label for="estatura"><b> Estatura (m): </b></label>
+                            <input type="number" id="estatura" name="estatura" step="0.1" placeholder="Ingrese su estatura" required>
+
+                            <br><br>
+                            <label for="telefono"> <b>Telefono: </b></label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono" required>
+
+                            <br><br>
+                            <label for="dias"><b> Numero de dias que asistira a la semana: </b></label>
+                            <input type="number" id="dias" name="dias" min="3" max="6" placeholder="Dias a la semana que asistira al gym" required>
+
+                            <br><br>
+                            <label><b>Objetivo:</b></label>
+                                <br>
+                                <input type="radio" id="subir" name="objetivo" value="Subir" required>
+                                <label for="subir">Subir de peso</label>
+                                <br>
+                                <input type="radio" id="bajar" name="objetivo" value="Bajar" required>
+                                <label for="bajar">Bajar de peso</label>
+                                <br>
+                                <input type="radio" id="mantenerse" name="objetivo" value="Mantenerse" required>
+                                <label for="mantenerse">Mantenerse en forma</label>
+                                
+                            <br><br>
+                            <label><b>Tipo de cliente: </b></label>
+                                <br>
+                                <input type="radio" id="premium" name="tipo" value="Premium" required>
+                                <label for="premium">Cliente Premium</label>
+                                <br>
+                                <input type="radio" id="normal" name="tipo" value="Normal" required> 
+                                <label for="normal">Cliente normal</label>
+                            
+                            <br><br>
+                            <label><b>Elige tu sexo:</b></label>
+                                <br>
+                                <input type="radio" id="femenino" name="sexo" value="Femenino" required>
+                                <label for="femenino">Femenino</label>
+                                <br>
+                                <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                                <label for="masculino">Masculino</label>
+                                <br>
+                                <input type="radio" id="otro" name="sexo" value="Otro" required>
+                                <label for="otro">Otro</label>           
+
+                                <br><br>
+                                <input type="submit" value="Enviar">
+                        </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br><br>
+                    <h2>
+                        Diferencias entre cliente premium y normal:
+                    </h2>
+                    <h2>Normal:</h2>                        
+                    <li>Tiene derecho a ir los dias que escoja</li>
+                    <li>Puede hacer uso de todas las instalaciones exceptuando el area de batidos proteicos</li>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan =2>
+                    <h2>
+                        Premium:                    
+                    </h2>
+                    <li>Tiene derecho a ir los dias que escoja</li>
+                    <li>Puede hacer uso de todas las instalaciones</li>
+                    <li>Tendra entrenador personalizado</li>
+                    <li>Tendra la posibilidad de adquirir un batido proteico por entrenamiento</li>                    
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
